@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>918725882408-8gkgngjavp0565rvheaqs93ogds96qjs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.918725882408-8gkgngjavp0565rvheaqs93ogds96qjs</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDA3ZtxHP2rK9AgZKN3-0LB1uPLVCM6S38</string>
+	<key>GCM_SENDER_ID</key>
+	<string>918725882408</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jeon.WordChainGame</string>
+	<key>PROJECT_ID</key>
+	<string>wordchaingame-91e70</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wordchaingame-91e70.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:918725882408:ios:e89bbddb87d158e5637b1d</string>
+</dict>
+</plist>

@@ -11,6 +11,12 @@
 		14BE30F4294311D500D2ED6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE30F3294311D500D2ED6F /* ContentView.swift */; };
 		14BE30F6294311DB00D2ED6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE30F5294311DB00D2ED6F /* Assets.xcassets */; };
 		14BE30F9294311DB00D2ED6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE30F8294311DB00D2ED6F /* Preview Assets.xcassets */; };
+		14BE310D294317D000D2ED6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14BE310C294317D000D2ED6F /* GoogleService-Info.plist */; };
+		14BE31102943184000D2ED6F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 14BE310F2943184000D2ED6F /* FirebaseAuth */; };
+		14BE31122943184000D2ED6F /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 14BE31112943184000D2ED6F /* FirebaseDatabase */; };
+		14BE31142943184000D2ED6F /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 14BE31132943184000D2ED6F /* FirebaseDatabaseSwift */; };
+		14BE31162943184000D2ED6F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 14BE31152943184000D2ED6F /* FirebaseFirestore */; };
+		14BE31182943184000D2ED6F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 14BE31172943184000D2ED6F /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,7 @@
 		14BE30F3294311D500D2ED6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14BE30F5294311DB00D2ED6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14BE30F8294311DB00D2ED6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14BE310C294317D000D2ED6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BE31182943184000D2ED6F /* FirebaseFirestoreSwift in Frameworks */,
+				14BE31142943184000D2ED6F /* FirebaseDatabaseSwift in Frameworks */,
+				14BE31162943184000D2ED6F /* FirebaseFirestore in Frameworks */,
+				14BE31122943184000D2ED6F /* FirebaseDatabase in Frameworks */,
+				14BE31102943184000D2ED6F /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +65,7 @@
 			children = (
 				14BE30F1294311D500D2ED6F /* WordChainGameApp.swift */,
 				14BE30F3294311D500D2ED6F /* ContentView.swift */,
+				14BE310C294317D000D2ED6F /* GoogleService-Info.plist */,
 				14BE30F5294311DB00D2ED6F /* Assets.xcassets */,
 				14BE30F7294311DB00D2ED6F /* Preview Content */,
 			);
@@ -83,6 +96,13 @@
 			dependencies = (
 			);
 			name = WordChainGame;
+			packageProductDependencies = (
+				14BE310F2943184000D2ED6F /* FirebaseAuth */,
+				14BE31112943184000D2ED6F /* FirebaseDatabase */,
+				14BE31132943184000D2ED6F /* FirebaseDatabaseSwift */,
+				14BE31152943184000D2ED6F /* FirebaseFirestore */,
+				14BE31172943184000D2ED6F /* FirebaseFirestoreSwift */,
+			);
 			productName = WordChainGame;
 			productReference = 14BE30EE294311D500D2ED6F /* WordChainGame.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 14BE30E5294311D500D2ED6F;
+			packageReferences = (
+				14BE310E2943184000D2ED6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 14BE30EF294311D500D2ED6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14BE30F9294311DB00D2ED6F /* Preview Assets.xcassets in Resources */,
+				14BE310D294317D000D2ED6F /* GoogleService-Info.plist in Resources */,
 				14BE30F6294311DB00D2ED6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +363,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14BE310E2943184000D2ED6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14BE310F2943184000D2ED6F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14BE310E2943184000D2ED6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		14BE31112943184000D2ED6F /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14BE310E2943184000D2ED6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		14BE31132943184000D2ED6F /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14BE310E2943184000D2ED6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		14BE31152943184000D2ED6F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14BE310E2943184000D2ED6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		14BE31172943184000D2ED6F /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14BE310E2943184000D2ED6F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14BE30E6294311D500D2ED6F /* Project object */;
 }
